@@ -26,7 +26,7 @@ const Header = () => {
       {showSignInForm && <SignIn toggleSignInForm={toggleSignInForm} />}
       {showSignUpForm && <SignUp />}
       <div className="header-container">
-        <div style={{ marginLeft: "2%" }}>
+        <div style={{ paddingLeft: "2%", width: "25%" }}>
           <NavLink to="/" end className="nav-logo">
             <div className="logo-container">
               <div className="logo-image">
@@ -99,13 +99,14 @@ const Header = () => {
           </ul>
         </div>
 
-        <button className="signin-button" onClick={toggleSignInForm}>
-          <p>Log In</p>
-        </button>
-
-        <button className="signup-button" onClick={toggleSignUpForm}>
-          Sign Up
-        </button>
+        <div className="button-container">
+          <button className="signup-button" onClick={toggleSignUpForm}>
+            Sign Up
+          </button>
+          <button className="signin-button" onClick={toggleSignInForm}>
+            <p>Log In</p>
+          </button>
+        </div>
       </div>
     </div>
   );

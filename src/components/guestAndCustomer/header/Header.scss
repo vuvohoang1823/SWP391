@@ -101,40 +101,46 @@ $green-hover: #4d6144;
       }
     }
   }
-  .signin-button {
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-    min-width: 100px;
-    height: 35px;
-    font-size: 1.1em;
-    color: $green;
-    cursor: pointer;
 
-    &:hover {
-      color: #617a55;
+  .button-container {
+    width: 25%;
+    padding-right: 5%;
+    .signin-button {
+      float: right;
+      border: none;
+      background-color: rgba(0, 0, 0, 0);
+      min-width: 100px;
+      height: 35px;
+      font-size: 1.1em;
+      color: $green;
+      cursor: pointer;
+
+      &:hover {
+        color: #617a55;
+      }
+
+      @media screen and (max-width: 500px) {
+        right: 15px;
+      }
     }
+    .signup-button {
+      float: right;
+      background-color: #617a55;
+      border-radius: 30px;
+      min-width: 100px;
+      height: 35px;
+      font-size: 1.1em;
+      color: white;
+      border: 0;
+      cursor: pointer;
 
-    @media screen and (max-width: 500px) {
-      right: 15px;
-    }
-  }
+      &:hover {
+        background-color: #468847;
+      }
 
-  .signup-button {
-    background-color: #617a55;
-    border-radius: 30px;
-    min-width: 100px;
-    height: 35px;
-    font-size: 1.1em;
-    color: white;
-    border: 0;
-    cursor: pointer;
-
-    &:hover {
-      background-color: #468847;
-    }
-
-    @media screen and (max-width: 500px) {
-      right: 15px;
+      @media screen and (max-width: 500px) {
+        right: 15px;
+      }
     }
   }
 }
