@@ -1,51 +1,68 @@
-$background-color: #617a55;
-$green-main: #617a55;
-$green-hover: #4d6144;
-$grey: #b8c6c2;
+// $background-color: #617a55;
+// $green-main: #617a55;
+// $green-hover: #4d6144;
+// $grey: #b8c6c2;
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $grey;
-  height: 21vh;
-  margin-top: 5%;
-  height: fit-content;
-  padding: 3%;
+// footer {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   background-color: $grey;
+//   height: 21vh;
+//   margin-top: 5%;
+//   height: fit-content;
+//   padding: 3%;
 
-  .logo-column {
-    flex-basis: 50%;
+//   .logo-column {
+//     flex-basis: 50%;
 
-    .logo-container {
-      display: flex;
-      width: 20%;
-      .logo-text {
-        cursor: pointer;
-        color: black;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 43px;
-      }
-      .logo-image {
-        flex: 0 0 100%;
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: contain;
-          object-position: center;
-        }
-      }
-    }
+//     .logo-container {
+//       display: flex;
+//       width: 20%;
+//       .logo-text {
+//         cursor: pointer;
+//         color: black;
+//         text-decoration: none;
+//         font-weight: bold;
+//         font-size: 43px;
+//       }
+//       .logo-image {
+//         flex: 0 0 100%;
+//         img {
+//           height: 100%;
+//           width: 100%;
+//           object-fit: contain;
+//           object-position: center;
+//         }
+//       }
+//     }
+//   }
+
+//   .column {
+//     flex-basis: calc((100% - 50%) / 3);
+//     line-height: 200%;
+
+//     .contact-info-footer {
+//       p {
+//         line-height: 265%;
+//       }
+//     }
+//   }
+// }
+.footer {
+  padding: 2% 0;
+  background-color: black;
+  .text {
+    color: white;
+    text-align: center;
   }
-
-  .column {
-    flex-basis: calc((100% - 50%) / 3);
-    line-height: 200%;
-
-    .contact-info-footer {
-      p {
-        line-height: 265%;
-      }
+  .row {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    div {
+      margin: 0 1%;
+      color: white;
     }
   }
 }
